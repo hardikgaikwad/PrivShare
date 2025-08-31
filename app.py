@@ -4,7 +4,19 @@ import os
 from dotenv import load_dotenv
 
 BACKEND_URL='https://privshare.onrender.com/api'
-st.title("PrivShare")
+
+# Title
+st.set_page_config(
+    page_title="PrivShare",
+    page_icon="logo.png" 
+)
+col1, col2 = st.columns([1, 10])
+
+with col1:
+    st.image("logo.png", width=60)
+
+with col2:
+    st.title("PrivShare") 
 
 # Upload section
 st.header("Upload a file")
