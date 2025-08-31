@@ -3,7 +3,7 @@ import requests
 import os
 from dotenv import load_dotenv
 
-BACKEND_URL='https://privshare.onrender.com'
+BACKEND_URL='https://privshare.onrender.com/api'
 st.title("PrivShare")
 
 # Upload section
