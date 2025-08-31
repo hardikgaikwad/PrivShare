@@ -96,12 +96,11 @@ You can try the application online here: [PrivShare Live Demo](https://privshare
 
 ## Project Structure
 privshare/
-│
-├── core/ # Django core settings
-├── files/ # Django app for file encryption and storage
-├── app.py # Streamlit frontend
-├── requirements.txt # Python dependencies
-└── README.md
+    core/ # Django core settings
+    files/ # Django app for file encryption and storage
+    app.py # Streamlit frontend
+    requirements.txt # Python dependencies
+    README.md
 
 ---
 
