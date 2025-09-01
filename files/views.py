@@ -5,10 +5,13 @@ from django.shortcuts import get_object_or_404
 from django.http import HttpResponse
 from django.utils import timezone
 from .models import EncryptedFile
-from .utils import encrypt_file, decrypt_file
+from .utils import encrypt_file, decrypt_file, cleanup
 
 class FileUploadView(APIView):
     def post(self, request):
+        deleted_count = cleanup()
+        if deleted_count > 0:
+            print(f"Deleted {deleted_count} expired files.")
         if 'file' not in request.FILES:
             return Response({"error": "No file provided"}, status=status.HTTP_400_BAD_REQUEST)
 
