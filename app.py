@@ -4,7 +4,7 @@ import os
 import base64
 from Crypto.Cipher import AES
 
-BACKEND_URL = 'http://127.0.0.1:8000/api'
+BACKEND_URL = 'http://privshare.onrender.com/api'
 
 # ── Logo Base64 ────────────────────────────────────────────────────────
 
